@@ -1,113 +1,101 @@
 import Image from 'next/image'
+import Link from "next/link"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+
+import { cn } from "@/lib/utils"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+import { ModeToggle } from '@/components/ui/modetoggle'
+import { Button } from '@/components/ui/button'
+import { pages } from 'next/dist/build/templates/app-page'
+import { Main } from 'next/document'
 
 export default function Home() {
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className='grid place-items-center h-screen'>
+      <section className='flex flex-col sm:flex-row pt-20'>
+        <div className='sm:w-2/5'>
+          <h1 className="pl-2 scroll-m-20 text-4xl justify-left font-extrabold tracking-tight lg:text-5xl">
+            Vocation
+          </h1>
+          <h4 className="pl-6 scroll-m-20 text-muted-foreground text-xl font-semibold tracking-tight">
+            /vōˈkāSH(ə)n/ Noun
+          </h4>
+          <blockquote className="pl-10 text-primary hover:text-sky-600 w-4/5 mt-6 border-l-2 pl-6 italic">
+            a type of work that you feel you are suited to doing and to which you should give all your time and energy, or the feeling that a type of work suits you in this way
+            <br></br>- Marriam Webster
+          </blockquote>
+          <p className="pt-6 pl-6 pr-4">Every NSF has a vocation of their own. Commonly abbreviated with acronyms like ASA, SA-GE, TPT-OPR, INF-TPR, there are perhaps a thousand different vocations. Yet, not everyone can relate to the meaning of 'vocation'. It is a fact that for almost every single NSF, they cannot choose their vocation. But that doesn't mean you have no control over your future. Here, we help you in understanding and
+            <a className="underline decoration-primary decoration-3 hover:decoration-4"> getting your desired posting</a> </p>
         </div>
+        <div className='sm:h-4/5 p-6 sm:w-3/5 order-first sm:order-last'>
+          <img src='/25299751_10155763659476063_3318136632110961246_o.jpeg' alt='what' />
+        </div>
+      </section>
+      <section className=' pt-60'>
+        <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+          Looking on Google/Reddit to find advice on the best posting?
+        </h2>
+        <h4 className="scroll-m-20 mt-5 text-xl font-semibold tracking-tight">
+          How to get posted to Air Force? <br />
+          How to get posted to Commandos? <br />
+          How to get posted to Storeman? <br />
+          How to get posted to Combat Medic? <br />
+          How to get posted to Command School? <br />
+          <a className="underline decoration-primary decoration-3 hover:decoration-4">How to get into OCS?</a>
+        </h4>
+
+      </section>
+      <section className='flex flex-col sm:flex-row pt-60 w-full'>
+        <div className='sm:w-1/2 p-8'>
+          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            If you are:
+          </h2>
+          <Card className='p-8 object-center'>
+            <ul className="list-inside list-disc">
+              <li>Curious on <a className="underline decoration-primary decoration-3 hover:decoration-4"> what postings there are</a> and what you are likely to get into</li>
+              <li>Want to <a className='font-bold hover:italic'> know more </a>about the different phases of NSF life, from BMT to Unit</li>
+              <li>Driven to <a className='font-bold hover:italic'> make the most </a> out of your 2 years and achieve your goals</li>
+              <li>Want to know who gets <a className="underline decoration-primary decoration-3 hover:decoration-4">selected</a> for command school and why</li>
+              <li>Hope to gain a head start in understanding the military regimentation</li>
+            </ul>
+          </Card>
+        </div>
+        <div className='sm:w-1/2 p-8'>
+          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            Where we can help you:
+          </h2>
+          <Card className='p-8 object-center'>
+            <ul className="list-inside list-disc">
+              <li>Get questions answered from those who were in the <a className="underline decoration-primary decoration-3 hover:decoration-4">same position as you</a></li>
+              <li>Gain insight into what makes a <a className='font-bold hover:italic'> meaningful NSF journey </a> whether it be an upz vocation or not, a leader or a man</li>
+              <li><a className="underline decoration-primary decoration-3 hover:decoration-4">Long term plans</a> to optimise chances of getting into the posting of your choice</li>
+            </ul>
+          </Card>
+        </div>
+      </section>
+      <div className='mb-10'>
+        <Button className='rounded-full'>
+          <a href="https://forms.gle/sAByTe1LdEta4iGA8" target="_blank">Start your free Consultation </a>
+        </Button>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
   )
 }
