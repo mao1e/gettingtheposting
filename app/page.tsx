@@ -41,7 +41,7 @@ export default function Home() {
             a type of work that you feel you are suited to doing and to which you should give all your time and energy, or the feeling that a type of work suits you in this way
             <br></br>- Marriam Webster
           </blockquote>
-          <p className="pt-6 pl-6 pr-4">Every NSF has a vocation of their own. Commonly abbreviated with acronyms like ASA, SA-GE, TPT-OPR, INF-TPR, there are perhaps a thousand different vocations. Yet, not everyone can relate to the meaning of 'vocation'. It is a fact that for almost every single NSF, they cannot choose their vocation. But that doesn't mean you have no control over your future. Here, we help you in understanding and
+          <p className="pt-6 pl-6 pr-4">Every NSF has a vocation of their own. Commonly abbreviated with acronyms like ASA, SA-GE, TPT-OPR, INF-TPR, there are perhaps a thousand different vocations. Yet, not everyone can relate to the meaning of &aposvocation&apos. It is a fact that for almost every single NSF, they cannot choose their vocation. But that doesn&apost mean you have no control over your future. Here, we help you in understanding and
             <a className="underline decoration-primary decoration-3 hover:decoration-4"> getting your desired posting</a> </p>
         </div>
         <div className='sm:h-4/5 p-6 sm:w-3/5 order-first sm:order-last'>
