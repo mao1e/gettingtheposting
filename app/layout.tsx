@@ -19,7 +19,7 @@ import { usePathname } from 'next/navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Getting the Posting',
+  title: 'The Uniform Path',
   description: 'NS Coaching Service',
 }
 
@@ -54,6 +54,13 @@ export default function RootLayout({
                   <Link href="/about" legacyBehavior passHref>
                     <NavigationMenuLink className="px-5 hover:text-primary">
                       About
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/pricing" legacyBehavior passHref>
+                    <NavigationMenuLink className="px-5 hover:text-primary">
+                      Pricing
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>

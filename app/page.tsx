@@ -29,6 +29,18 @@ export default function Home() {
 
   return (
     <main className='grid place-items-center h-screen'>
+      <section className='px-7 py-80'>
+        <h1 className="pl-2 scroll-m-20 text-4xl justify-left font-extrabold tracking-tight lg:text-7xl">
+          The Uniform Path
+        </h1>
+        <h4 className="scroll-m-20 mt-5 text-xl font-semibold tracking-tight">
+          One path binds every Singaporean son from all walks of life to a uniform point: 2 years in National Service. <br />
+          One path sees every boy change his clothing of choice to the green SAF Uniform. <br />
+          Yet, it is a path of mutitude of possibilities and outcomes. <br />
+          <a className="underline decoration-primary decoration-3 hover:decoration-4">How do you want your path to turn out?</a>
+        </h4>
+
+      </section>
       <section className='flex flex-col sm:flex-row pt-20'>
         <div className='sm:w-2/5'>
           <h1 className="pl-2 scroll-m-20 text-4xl justify-left font-extrabold tracking-tight lg:text-5xl">
@@ -48,7 +60,7 @@ export default function Home() {
           <img src='/25299751_10155763659476063_3318136632110961246_o.jpeg' alt='what' />
         </div>
       </section>
-      <section className=' pt-60'>
+      <section className='px-7 pt-60'>
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Looking on Google/Reddit to find advice on the best posting?
         </h2>
@@ -92,7 +104,7 @@ export default function Home() {
       </section>
       <div className='mb-10'>
         <Button className='rounded-full'>
-          <a href="https://forms.gle/sAByTe1LdEta4iGA8" target="_blank">Start your free Consultation </a>
+          <a href="https://forms.gle/sAByTe1LdEta4iGA8" target="_blank">Get started with a free Consultation </a>
         </Button>
       </div>
 
