@@ -1,9 +1,10 @@
-import { Icons } from "@/components/icons"
+
 import {
     Avatar,
     AvatarFallback,
     AvatarImage,
 } from "@/components/ui/avatar"
+import { Contact } from "lucide-react"
 
 export default function Home() {
 
@@ -19,7 +20,7 @@ export default function Home() {
                     <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                         LTA(NS) Jonathan
                     </h3>
-                    <p className="flex text-sm text-muted-foreground"><Icons.user className="mr-2 h-4 w-4" />jonathanangml@gmail.com</p>
+                    <p className="flex text-sm text-muted-foreground"><Contact className="mr-2 h-4 w-4" />jonathanangml@gmail.com</p>
                     <p>
                         Hi there! I enlisted in Jan 2021 as part of the JC batch and ORD&apos;d at the end of 2022. When I enlisted, I was sent to mono-armour and thought that I would be in Armour Infantry for the rest of my NS.
                         Yet, after BMT, I was posted to OCS where I joined the Army Wing. <br />

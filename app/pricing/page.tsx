@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons"
+import { Check } from "lucide-react"
 
 export const metadata = {
   title: "Pricing",
@@ -26,22 +26,22 @@ export default function PricingPage() {
           </h3>
           <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> 1:1 Support
+              <Check className="mr-2 h-4 w-4" /> 1:1 Support
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Long-term Coaching
+              <Check className="mr-2 h-4 w-4" /> Long-term Coaching
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Insider Information
+              <Check className="mr-2 h-4 w-4" /> Insider Information
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Gain an advantage over peers
+              <Check className="mr-2 h-4 w-4" /> Gain an advantage over peers
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Big-Picture, First-hand insight
+              <Check className="mr-2 h-4 w-4" /> Big-Picture, First-hand insight
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Guest speakers from your desired vocation
+              <Check className="mr-2 h-4 w-4" /> Guest speakers from your desired vocation
             </li>
           </ul>
         </div>
