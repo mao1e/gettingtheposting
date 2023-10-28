@@ -36,7 +36,7 @@ export default function Home() {
         <h4 className="scroll-m-20 mt-5 text-xl font-semibold tracking-tight">
           One path binds every Singaporean son from all walks of life to a uniform point: 2 years in National Service. <br />
           One path sees every boy change his clothing of choice to the green SAF Uniform. <br />
-          Yet, it is a path of mutitude of possibilities and outcomes. <br />
+          Yet, each person&apos;s path is unique and un-uniform. To some, it is an extraordinary journey. <br />
           <a className="underline decoration-primary decoration-3 hover:decoration-4">How do you want your path to turn out?</a>
         </h4>
 
