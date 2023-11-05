@@ -24,20 +24,26 @@ import { ModeToggle } from '@/components/ui/modetoggle'
 import { Button } from '@/components/ui/button'
 import { pages } from 'next/dist/build/templates/app-page'
 import { Main } from 'next/document'
+import { Footprints, Search } from 'lucide-react'
 
 export default function Home() {
 
   return (
     <main className='grid place-items-center h-screen'>
       <section className='px-7 py-80'>
-        <h1 className="pl-2 scroll-m-20 text-4xl justify-left font-extrabold tracking-tight lg:text-7xl">
-          The Uniform Path
-        </h1>
+        <div className='flex'>
+          <Footprints className='ml-2 h-10 w-10 lg:h-20 lg:w-20' />
+          <h1 className="pl-2 scroll-m-20 text-4xl justify-left font-extrabold tracking-tight lg:text-7xl">
+            <a className="underline decoration-primary decoration-4 hover:decoration-8">The Uniform Path</a>
+          </h1>
+
+        </div>
+
         <h4 className="scroll-m-20 mt-5 text-xl font-semibold tracking-tight">
           One path binds every Singaporean son from all walks of life to a uniform point: 2 years in National Service. <br />
           One path sees every boy change his clothing of choice to the green SAF Uniform. <br />
           Yet, each person&apos;s path is unique and un-uniform. To some, it is an extraordinary journey. <br />
-          <a className="underline decoration-primary decoration-3 hover:decoration-4">How do you want your path to turn out?</a>
+          <a className="text-primary">How do you want your path to turn out?</a>
         </h4>
 
       </section>
@@ -58,12 +64,17 @@ export default function Home() {
         </div>
         <div className='sm:h-4/5 p-6 sm:w-3/5 order-first sm:order-last'>
           <img src='/25299751_10155763659476063_3318136632110961246_o.jpeg' alt='what' />
+          <p className="text-sm text-muted-foreground">Image taken from SAF Facebook page</p>
         </div>
       </section>
       <section className='px-7 pt-60'>
-        <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-          Looking on Google/Reddit to find advice on the best posting?
-        </h2>
+        <div className='flex items-center'>
+          <Search className='h-10 w-10' />
+          <h2 className="scroll-m-20 ml-2 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+            Looking on Google/Reddit to find advice on the best posting?
+          </h2>
+        </div>
+
         <h4 className="scroll-m-20 mt-5 text-xl font-semibold tracking-tight">
           How to get posted to Air Force? <br />
           How to get posted to Commandos? <br />

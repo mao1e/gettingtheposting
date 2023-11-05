@@ -13,7 +13,7 @@ export default function PricingPage() {
     <section className="container flex flex-col  gap-6 py-8 md:max-w-[64rem] md:py-12 lg:py-24">
       <div className="mx-auto flex w-full flex-col gap-4 md:max-w-[58rem]">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          One Standard, one pricing
+          One Standard, one Pricing
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
           Get all your questions about NS answered and <a className="underline decoration-primary decoration-3 hover:decoration-4">discern the truth from what relatives or other parents have told you.</a>
@@ -22,7 +22,7 @@ export default function PricingPage() {
       <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
         <div className="grid gap-6">
           <h3 className="text-xl font-bold sm:text-2xl">
-            What&apos;s included in the ULTIMATE plan
+            What&apos;s included in the plan
           </h3>
           <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
             <li className="flex items-center">
@@ -47,7 +47,7 @@ export default function PricingPage() {
         </div>
         <div className="flex flex-col gap-4 text-center">
           <div>
-            <h4 className="text-7xl font-bold">$90</h4>
+            <h4 className="text-7xl font-bold">$-</h4>
             <p className="text-sm font-medium text-muted-foreground">
               Billed Hourly
             </p>
