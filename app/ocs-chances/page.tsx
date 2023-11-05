@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <p className='sm:w-1/2'>
                 Adding all those numbers up, the total number of officer graduates stands at 1242. However, this includes officers who are regulars. While they also have a selection process, they do not have the same criterias as that of NSFs. Since they are out of this scope, we will take them out.
-                <br /> Let's set the number of regulars to be 1/5 of the total number of OCS graduates. This is because, the Air and MIDs Wings are close to about 50% regulars while the DIS Wing is 100% regulars. Army wings should be about less than 10% regulars.
+                <br /> Let&apos;s set the number of regulars to be 1/5 of the total number of OCS graduates. This is because, the Air and MIDs Wings are close to about 50% regulars while the DIS Wing is 100% regulars. Army wings should be about less than 10% regulars.
                 <br /> <a className="underline decoration-primary decoration-3 hover:decoration-4">So the Total NSF OCS graduates is 994.</a>
                 <br /><br /> Now we have to find the total number of NSFs
                 <br /> According to Dr Eng En Han’s statement here: around 10% of NSF cohort are new citizens, which number 3400. So the NSF cohort each year is 34000.
