@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
     title: 'How to get into OCS? - The definitive guide',
-    description: 'Learn what the selection criteria for OCS is and how to be chosen/selected for Command School',
+    description: 'Learn what the selection criteria for OCS is and how to be chosen/selected for Command School during National Service in Singapore',
 }
 
 

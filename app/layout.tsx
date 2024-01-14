@@ -22,7 +22,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'The Uniform Path',
-  description: 'NS Coaching Service',
+  description: 'Understanding Singapore National Service',
 }
 
 export default function RootLayout({

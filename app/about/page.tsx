@@ -5,6 +5,13 @@ import {
     AvatarImage,
 } from "@/components/ui/avatar"
 import { Contact, Mail } from "lucide-react"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Who am I? An Officer during my National Service in Singapore',
+    description: 'Sharing my experience getting into OCS and more about the various National Service vocations in Singapore',
+}
+
 
 export default function Home() {
 
@@ -22,7 +29,7 @@ export default function Home() {
                     </h3>
                     <p className="flex text-sm text-muted-foreground"><Mail className="mr-2 h-4 w-4" />jonathanangml@gmail.com</p>
                     <p>
-                        Hi there! I enlisted in Jan 2021 as part of the JC batch and ORD&apos;d at the end of 2022. When I enlisted, I was sent to mono-armour and thought that I would be in Armour Infantry for the rest of my NS.
+                        Hi there! I enlisted in Jan 2021 as part of the JC batch and ORD&apos;d at the end of 2022. When I enlisted for my National Service in Singapore, I was sent to mono-armour and thought that I would be in Armour Infantry for the rest of my NS.
                         Yet, after BMT, I was posted to OCS where I joined the Army Wing. <br />
                         In another dramatic change, I was then posted to the Air Force Wing while I was in OCS and ended up commissioning as an Air Force Officer.
                         It didn&apos;t stop there! After commissioning, I was posted to an Air Force Battalion as a Logistics Officer...There were many changes in my journey and I&apos;m confident my experience will be valuable to parents and enlistees who want to understand the many paths the NS journey can take.

@@ -38,7 +38,7 @@ const invoices = [
 
 export const metadata: Metadata = {
     title: 'How hard is it to get into OCS?',
-    description: 'Discover how selective and prestigious OCS is and what your chances of getting in is',
+    description: 'Discover how selective and prestigious OCS is and what your chances of getting in is during your National Service in Singapore',
 }
 
 
