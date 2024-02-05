@@ -37,7 +37,7 @@ const invoices = [
 
 
 export const metadata: Metadata = {
-    title: 'How hard is it to get into OCS?',
+    title: 'How hard is it to get into OCS as a Singaporean NSF?',
     description: 'Discover how selective and prestigious OCS is and what your chances of getting in is during your National Service in Singapore',
 }
 
@@ -47,14 +47,14 @@ export default function Home() {
     return (
         <main className='grid place-items-center'>
             <h1 className="scroll-m-20 pb-2 text-4xl font-extrabold tracking-tight lg:text-5xl">
-                How hard is it to get into Command School?
+                How hard is it to get into Command School as a Singaporean NSF?
             </h1>
             <div className='flex pb-10'>
                 <Contact className="mr-1 h-4 w-4" /><Link href="/about"><p className="text-sm text-muted-foreground hover:font-bold">Written by LTA(NS) Jonathan</p></Link>
                 <CalendarDays className="ml-4 mr-1 h-4 w-4" /><p className="text-sm text-muted-foreground">04 Nov 2023</p>
             </div>
 
-            <p> Many NSFs want to know <a className='text-primary'>how many people get into OCS.</a> Here we will breakdown the number to give a rough estimation of the percentage of NSFs who make it there.</p>
+            <p> Many singaporean guys want to know <a className='text-primary'>how many people get into OCS, the top command school in the SIngapore Armed Forces.</a> Here we will breakdown the number to give a rough estimation of the percentage of NSFs who make it there during their National Service.</p>
             <p>
                 Let&apos;s first calculate the total number of new NSF Officers each year.
             </p>
