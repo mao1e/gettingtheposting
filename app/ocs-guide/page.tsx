@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-    title: 'How to get into OCS? - The definitive guide',
+    title: 'How to get into OCS? - The definitive guide for Singaporean guys',
     description: 'Learn what the selection criteria for OCS is and how to be chosen/selected for Command School during National Service in Singapore',
 }
 
@@ -14,14 +14,14 @@ export default function Home() {
     return (
         <main>
             <h1 className="scroll-m-20 p-10 pb-2 text-4xl font-extrabold tracking-tight lg:text-5xl">
-                How to get into OCS? - the definitive guide
+                How to get into OCS? - the definitive guide for Singaporean guys
             </h1>
             <div className='flex px-10 pb-10'>
                 <Contact className="mr-1 h-4 w-4" /><Link href="/about"><p className="text-sm text-muted-foreground hover:font-bold">Written by LTA(NS) Jonathan</p></Link>
                 <CalendarDays className="ml-4 mr-1 h-4 w-4" /><p className="text-sm text-muted-foreground">04 Nov 2023</p>
             </div>
-            <p className='px-10'>Many NSFs want to know what is the criteria for getting into OCS. Nobody tells you directly, not even your commanders which makes it seem rather mysterious. Many people, be it BMT mates/parents/relatives speculate greatly on the requirements of getting into OCS. This guide could help to give some insight and put down some of these speculations.
-                <br /><br /> To give you <a className='text-primary font-bold'>3 essential tips for getting into Command School</a>, I will go along the thread of the OCS motto: To lead, to excel, to overcome.
+            <p className='px-10'>Many singaporean guys want to know what is the criteria for getting into OCS during their military service in Singapore. Nobody tells you directly, not even your commanders which makes it seem rather mysterious. Many people, be it BMT mates/parents/relatives speculate greatly on the requirements of getting into OCS. This guide could help to give some insight and put down some of these speculations.
+                <br /><br /> To give you <a className='text-primary font-bold'>3 essential tips for getting into Command School in the Singapore Armed Forces</a>, I will go along the thread of the OCS motto: To lead, to excel, to overcome.
             </p>
 
             <h2 className="scroll-m-20 p-10 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
